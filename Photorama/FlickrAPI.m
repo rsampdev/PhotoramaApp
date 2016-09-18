@@ -16,7 +16,7 @@ NSString * const BaseURLString = @"https://api.flickr.com/services/rest";
 NSString * const RecentPhotosMethod = @"flickr.photos.getRecent";
 
 + (NSURL *)recentPhotosURL {
-    NSDictionary *parameters = @{@"extras":@"url_h,date_taken"};
+    NSDictionary *parameters = @{@"extras":@"url_h,date_taken", @"per_page":@"498", @"page":@"10"};
     NSURL *url = [self flickrURLForMethod:RecentPhotosMethod parameters:parameters];
     return url;
 }

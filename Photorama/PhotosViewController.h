@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class PhotoStore;
 
-@interface PhotosViewController : UIViewController
+@interface PhotosViewController : UIViewController <UICollectionViewDelegate>
 
 @property (nonatomic) PhotoStore *photoStore;
 
